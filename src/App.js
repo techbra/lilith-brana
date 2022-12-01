@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/NavBar';
+import ItemListContainer from './Components/ItemListContainer';
+import fondo from "../src/Assets/azaz.jpg"
+import { styles }  from "./Components/styles"
+
+
 
 function App() {
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />   
+    
+  <ItemListContainer greeting={"¡¡Porductos y Precios de otras Galaxia!!"} />
+  <img style={styles.fondo}src={fondo} alt="" /> 
+  
     </div>
+   
   );
 }
 

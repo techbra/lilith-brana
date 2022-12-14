@@ -1,8 +1,9 @@
+
 [
-{"id":1, "nombre":"Maya Caracol", "descripcion":"Tejido al Craichet con colore a eleccion", "imagen":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DN9FMoDjkH44&psig=AOvVaw0BI76LkzznDQaAta3VKXvm&ust=1670893615414000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNjlhvXx8vsCFQAAAAAdAAAAABAZ", "precio":2800, "stock":8,
+{"id":1, "nombre":"Maya Caracol", "descripcion":"Corpinio de  bikini tejido al crochet. Color a eleccion", "imagen":"http://http2.mlstatic.com/D_614843-MLA31007788042_062019-O.jpg", "precio": "$2800", "stock":8,
  "categoria":"Indumentaria"},
-{"id":2, "nombre":"Jabon Estrella", "descripcion":"Jabon Artesanal", "imagen":"", "precio":500, "stock":18, "categoria":"Jabones"},
-{"id":3, "nombre":"Velas Flotantes Navideñas", "descripcion":"Velas con motivos navideños a  eleccion.", "imagen":"", "stock":5, "precio":1200, "categoria":"Velas"},
-{"id":4, "nombre":"Aros Multicolor", "descripcion":"Aros artesanales", "imagen":"", "precio":1750, "stock":4, "categoria":"Bijou"}
+{"id":2, "nombre":"Jabon Estrella", "descripcion":"Jabon Artesanal", "imagen":"https://i.etsystatic.com/24664956/r/il/49ef15/2574361218/il_794xN.2574361218_pv4w.jpg", "precio":"$500", "stock":18, "categoria":"Jabones"},
+{"id":3, "nombre":"Velas Flotantes Navideñas", "descripcion":"Velas con motivos navideños a  eleccion.", "imagen":"https://decoracion2.com/imagenes/2013/07/centro-de-mesa1.jpg", "stock":5, "precio":"$1200", "categoria":"Velas"},
+{"id":4, "nombre":"Aros Multicolor", "descripcion":"Aros artesanales", "imagen":"https://cdnx.jumpseller.com/purpura/image/25587799/thumb/540/540?1657222023", "precio":"$1750", "stock":4, "categoria":"Bijou"}
 
 ]

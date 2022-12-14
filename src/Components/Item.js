@@ -1,14 +1,15 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import{ Grid, CardContent, CardMedia,Typography,Button,CardActionArea,CardActions} from "@mui/material";
+import{ Grid, CardContent, CardMedia,Typography,Button,CardActionArea,CardActions, Container} from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
   return (
     <Link to={"/item/" + item.id}>
-        <Grid container spacing={3}>
-      <Grid item xs={2}>
-      <Card sx={{ maxWidth: 380 }} style={styles.container}>
+      <Container sx={{ marginY: 5}}>
+       <Grid container spacing={4}>
+      <Grid item xs={5}>
+      <Card sx={{ maxWidth: 450 }} style={styles.container}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -18,8 +19,7 @@ const Item = ({ item }) => {
         />
         <CardContent>
           <Typography
-            style={styles.title}
-          >
+            variant="h3" color="text.secundary">
             {item.nombre}
           </Typography>
           <Typography variant="h6" color="text.primary">
@@ -37,9 +37,10 @@ const Item = ({ item }) => {
        
       </CardActions>
     </Card>
-    </Grid>
-    
+ 
   </Grid>
+  </Grid>
+  </Container>
 </Link>
   
   );
@@ -48,8 +49,8 @@ const styles = {
     container: {
       width: window.innerHeight > 900 ? "50%" : "100%",
       flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
+      justifyContent: "left",
+      alignItems: "left",
       margin: 5,
       backgroundColor: "lilac",
     },

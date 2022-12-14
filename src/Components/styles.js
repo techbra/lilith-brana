@@ -26,7 +26,7 @@ export const styles = {
     },
 
     mensaje:{
-      color:"blue"
+      color:"black"
     },
     
     fondo: {

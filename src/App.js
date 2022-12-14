@@ -1,8 +1,10 @@
 import './App.css';
 import Navbar from './Components/NavBar';
 import ItemListContainer from './Components/ItemListContainer';
-import fondo from "../src/Assets/azaz.jpg"
-import { styles }  from "./Components/styles"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import ItemDetailContainer from './Components/ItemDetailsContainer';
+import Error from './Components/Error';
+
 
 
 
@@ -11,10 +13,17 @@ function App() {
   return (
     
     <div className="App">
-      <Navbar />   
-    
-  <ItemListContainer greeting={"¡¡Porductos y Precios de otras Galaxia!!"} />
-  <img style={styles.fondo}src={fondo} alt="" /> 
+      <BrowserRouter>
+       <Navbar />   
+       <Routes>
+      <Route path={"/"} element={<ItemListContainer greeting={"¡¡Porductos y Precios de otras Galaxia!!"} />} />
+      <Route path={"/category/:id"} element={<ItemListContainer />} />
+      <Route path={"/item/:id"} element={<ItemDetailContainer />} />  
+      <Route path={"*"} element={<Error />} />     
+       </Routes>
+      </BrowserRouter>
+     
+
   
     </div>
    

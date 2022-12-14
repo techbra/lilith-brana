@@ -4,6 +4,7 @@ import {AppBar, Toolbar, Box, Typography } from "@mui/material"
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import { styles }  from "./styles"
 import CartWidget from "../Components/CartWidget"
+import {Link, NavLink} from "react-router-dom";
 
  
 
@@ -14,13 +15,15 @@ const Navbar = () =>{
         <Toolbar>
         
        <navbar style={styles.navbar}>
+       <Link style={styles.logo} to="/">
         <img style={styles.logo}src={logo} alt="♥" />
+        </Link>
         <Typography variant="h2" alinear="justificar">Lilith <NightlightIcon /></Typography>
         <Typography variant="h5">
-        <a style={styles.categorias} href="/create" claName="nav enlace">Indumentaria</a>
-        <a style={styles.categorias} href="/create" claName="nav enlace">Jabones</a>
-        <a style={styles.categorias} href="/create" claName="nav enlace">Velas</a>
-        <a style={styles.categorias} href="/create" claName="nav enlace">Bijou</a>
+        <NavLink style={styles.categorias} to={"/category/Indumentaria"}>Indumentaria</NavLink>
+        <NavLink style={styles.categorias} to={"/category/Jabones"}>Jabones</NavLink>
+        <NavLink style={styles.categorias} to={"/category/Velas"}>Velas</NavLink>
+        <NavLink style={styles.categorias} to={"/category/Bijou"}>Bijou</NavLink>
          </Typography>
         <CartWidget />
         </navbar>

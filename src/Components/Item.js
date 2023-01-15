@@ -1,11 +1,13 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import{ Grid, CardContent, CardMedia,Typography,Button,CardActionArea,CardActions, Container} from "@mui/material";
+import{ Grid, CardContent, CardMedia,Typography,Button,CardActionArea,CardActions, Container, ThemeProvider} from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Item = ({ item }) => {
   return (
     <Link to={"/item/" + item.id}>
+      <Grid item xs={3}>
+    
       <Container sx={{ marginY: 5}}>
        <Grid container spacing={4}>
       <Grid item xs={5}>
@@ -41,6 +43,8 @@ const Item = ({ item }) => {
   </Grid>
   </Grid>
   </Container>
+
+</Grid>
 </Link>
   
   );

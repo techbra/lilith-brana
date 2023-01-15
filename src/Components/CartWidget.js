@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { Button } from "@mui/material";
+import { CartContext } from "./Context/CartContext";
+import { Link } from "react-router-dom";
 
 const CartWidget = () =>{
-    return(
+
+    const {cartTotal} = useContext(CartContext);
+    return cartTotal() ? <Link to={"/cart"}>
             <div>
-                 <h3>3</h3>
                 <AddShoppingCartIcon  sx={{ color: "pink"[500] }} fontSize="large" />
-               
+              <span> {cartTotal()} </span>
             </div>
-    )
+            </Link> : "";
+    
 }
  
 export default CartWidget;
